@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+}
+
+.background {
+  background-image: url('fondo.jpg'); /* Reemplaza con tu fondo real */
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: brightness(0.7);
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 90%;
+  max-width: 400px;
+  margin: 60px auto;
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.logo {
+  width: 70px;
+  margin-top: -60px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h2 {
+  margin-top: 50px;
+  font-size: 1.4rem;
+  color: #1d3557;
+}
+
+h2 .highlight {
+  color: #ff7a00;
+}
+
+h3 {
+  font-size: 1.1rem;
+  color: #1d3557;
+  margin: 10px 0 20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 20px;
+  border: none;
+  background-color: #e7ecff;
+  font-size: 0.95rem;
+}
+
+input::placeholder {
+  color: #6c757d;
+}
+
+.link {
+  display: block;
+  font-size: 0.85rem;
+  color: #1976d2;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+.btn-orange {
+  background-color: #ff7a00;
+  border: none;
+  padding: 12px;
+  border-radius: 20px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  transition: background 0.3s ease;
+}
+
+.btn-orange:hover {
+  background-color: #e76800;
+}
+
+.switch {
+  font-size: 0.85rem;
+  color: #333;
+}
+
+.switch a {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
