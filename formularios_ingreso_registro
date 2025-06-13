@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FestiPlace</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background"></div>
+
+  <!-- Login Form -->
+  <div class="form-container" id="loginForm">
+    <img src="logo.png" alt="FestiPlace Logo" class="logo" />
+    <h2>Bienvenido a <span class="highlight">FestiPlace</span></h2>
+    <h3>Inicio de sesión</h3>
+    <input type="text" placeholder="Usuario..." />
+    <input type="password" placeholder="Contraseña..." />
+    <a href="#" class="link">¿Olvidaste tu contraseña?</a>
+    <button class="btn-orange">Iniciar sesión</button>
+    <p class="switch">¿No tienes cuenta? <a href="#" onclick="toggleForms()">Regístrate aquí</a></p>
+  </div>
+
+  <!-- Register Form -->
+  <div class="form-container hidden" id="registerForm">
+    <img src="logo.png" alt="FestiPlace Logo" class="logo" />
+    <h2>Registrar usuario</h2>
+    <input type="email" placeholder="Correo electrónico..." />
+    <input type="password" placeholder="Ingrese una contraseña..." />
+    <input type="password" placeholder="Confirmar contraseña..." />
+    <input type="text" placeholder="Ingrese su número de celular..." />
+    <button class="btn-orange">Registrarse</button>
+    <p class="switch">¿Ya tienes cuenta? <a href="#" onclick="toggleForms()">Inicia sesión</a></p>
+  </div>
+
+  <script>
+    function toggleForms() {
+      document.getElementById('loginForm').classList.toggle('hidden');
+      document.getElementById('registerForm').classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>
